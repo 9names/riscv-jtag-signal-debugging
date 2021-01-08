@@ -1,4 +1,5 @@
-Captures of JTAG signals while connecting/programming bl602 for use with sigrok/pulseview
+Captures of JTAG signals while connecting/programming bl602 using Jlink, for use with sigrok/pulseview
+
 All captures done at 24Mhz sample rate using fx2 based logic analyzer
 
 JTAG signals map to the following channels
@@ -36,5 +37,7 @@ RUST_LOG=trace ./ram_download --chip riscv --address 0x42030000 --speed 10 --siz
   
 #### Other files:
   ```pulseview.png``` showing how to configure JTAG protocol decoder after loading .sr file
+
   ```nevergonna.bin``` text file to show uploading to RAM function
+
   ```bl602-rust_guide``` blinky/uart example program from https://github.com/sipeed/bl602-rust-guide
